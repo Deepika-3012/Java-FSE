@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Community Portal - Events</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="event.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="help.html">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Registration Form -->
+  <section>
+    <h2>Register for an Event</h2>
+    <form id="eventForm" onsubmit="return handleSubmit(event)">
+      <label>Name: <input type="text" name="name" required autofocus></label>
+      <label>Email: <input type="email" name="email" required></label>
+      <label>Date: <input type="date" name="date" required></label>
+      <label>Event Type:
+        <select name="type" required>
+          <option value="">Select</option>
+          <option value="music">Music</option>
+          <option value="food">Food</option>
+          <option value="art">Art</option>
+        </select>
+      </label>
+      <label>Message:<br><textarea name="message"></textarea></label>
+      <button type="submit">Submit</button>
+    </form>
+    <output id="confirmation"></output>
+  </section>
+</body>
+</html>

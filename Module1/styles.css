@@ -1,0 +1,64 @@
+/* Header Styles */
+.navbar {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  background-color: #007acc;
+  padding: 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Welcome Banner */
+#welcomeBanner {
+  background-color: #cceeff;
+  padding: 20px;
+  text-align: center;
+}
+
+.highlight {
+  color: red;
+  font-weight: bold;
+}
+
+/* Table Gallery */
+table {
+  width: 100%;
+  margin: 20px 0;
+}
+
+img {
+  width: 100%;
+  max-width: 150px;
+  border: 2px solid #ccc;
+}
+
+figcaption {
+  text-align: center;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+input, select, textarea, button {
+  padding: 8px;
+  font-size: 1em;
+}
+
+output {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  color: green;
+}
